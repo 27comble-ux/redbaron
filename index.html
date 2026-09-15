@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            
+            
+            <!-- plane -->
+            
+            
+            
+        <!-- fusalage -->
+    <a-cylinder
+    color="red"
+    height="4.5"
+    radius=".8"
+    position="0 .1 -.1"
+    rotation="90 0 0"
+    
+     animation="
+    
+    property: scale;
+    from: 1 1 1.4 ;
+    to: 1 1 1.4 ;
+    dur: 1000;
+    
+    "
+    
+    
+    ></a-cylinder>
+    
+    <a-cone
+    
+    color="red" 
+    radius-bottom=".8" 
+    height="4.2"
+    radius-top="0.25"
+    position="0 .42 4"
+rotation="80 0 0"    
+
+animation="
+
+property: scale;
+from: 1 1 1.4;
+to: 1 1 1.4;
+dur: 10;
+
+
+"
+    
+    
+    ></a-cone>
+   
+   <!-- cockpit -->
+   
+   <a-box
+   
+    color="darkred"
+    height="1.8"
+    width="1"
+    depth=".8"
+    position="0 .8 .5"
+    rotation="87 0 0"
+    
+   
+
+   
+   ></a-box>
+   
+    <a-box
+    color="darkred"
+    height="2"
+    width="1"
+    depth="1.8"
+    position="0 .2 0"
+    rotation="100 0 0"
+    ></a-box>
+   
+   
+   
+
+   
+   <!-- top wing -->
+   <a-box
+    color="darkred"
+    height=".2
+    "
+    width="14"
+    depth="2.4"
+    position="0 3 -1.5"
+    rotation="0 0 0"
+   ></a-box>
+   
+   
+   <!-- mid wing -->
+    <a-box
+    color="darkred"
+    height=".2
+    "
+    width="12"
+    depth="2"
+    position="0 .5 -1"
+    rotation="0 0 0"
+   ></a-box>
+   
+   <!-- lowwer wing -->
+     <a-box
+    color="darkred"
+    height=".2
+    "
+    width="10"
+    depth="1.8"
+    position="0 -1 -.2"
+    rotation="0 0 0 "
+   ></a-box>
+   
+   <!-- right-strut -->
+   <a-cylinder
+   
+   position=" 3 1 -0.7"
+   radius=".2"
+   height="4"
+   rotation="-10"
+   color="red"
+   
+   ></a-cylinder>
+   
+   
+    <!-- left-strut -->
+   <a-cylinder
+   
+   position=" -3 1 -0.7"
+   radius=".2"
+   height="4"
+   rotation="-10"
+   color="red"
+   
+   ></a-cylinder>
+   
+   
+   <!-- propellor -->
+   <a-sphere
+   
+   position="0 0.2 -3.2"
+   color="brown"
+   animation="
+   
+   property: scale;
+   from: 2.5 .3 .1;
+   to: 2.5 .3 .1;
+   
+   "
+   animation__1="
+   
+   property: rotation;
+   from: 0 0 0;
+   to: 0 0 180;
+   loop: true;
+   dur: 250;
+   
+   "
+   
+   ></a-sphere>
+   
+    <!-- propellor blend --> <!--
+   <a-sphere
+   
+   position="0 0.2 -3.2"
+   color="brown"
+   animation="
+   
+   property: scale;
+   from: 2.5 2.5 .1;
+   to: 2.5 2.5 .1;
+   
+   "
+    animation__31="
+   
+   property: rotation;
+   from: 0 0 0;
+   to: 0 0 180;
+   loop: true;
+   dur: 250;
+   
+   "
+
+   animation__1="
+
+   property: opacity;
+   from: .1;
+   to: 0.0;
+   loop: true;
+   dur: 150;
+   
+
+   "
+  
+   ></a-sphere>
+   -->
+   
+   <!-- engine 1 -->
+   <a-cylinder
+   radius=".28"
+   height="1.7"
+   position="0 0.2 -2.8"
+   color="#3b3b3b"
+   rotation="0 0 0"
+   
+   animation__1="
+   
+   property: rotation;
+   from: 0 0 0;
+   to: 0 0 180;
+   loop: true;
+   dur: 150;
+   
+   "
+   
+   ></a-cylinder>
+   
+ <!-- engine 2 -->
+   <a-cylinder
+   radius=".28"
+   height="1.7"
+   position="0 0.2 -2.8"
+   color="#3b3b3b"
+   rotation="0 0 30"
+   
+   animation__1="
+   
+   property: rotation;
+   from: 0 0 90;
+   to: 0 0 270;
+   loop: true;
+   dur: 150;
+   
+   "
+   
+   ></a-cylinder>
+      
+      
+       <!-- engine 3 -->
+   <a-cylinder
+   radius=".28"
+   height="1.7"
+   position="0 0.2 -2.8"
+   color="#3b3b3b"
+   rotation="0 0 30"
+   
+   animation__1="
+   
+   property: rotation;
+   from: 0 0 30;
+   to: 0 0 240;
+   loop: true;
+   dur: 150;
+   
+   "
+   
+   ></a-cylinder>
+
+
+    <!-- engine 4 -->
+   <a-cylinder
+   radius=".28"
+   height="1.7"
+   position="0 0.2 -2.8"
+   color="#3b3b3b"
+   rotation="0 0 30"
+   
+   animation__1="
+   
+   property: rotation;
+   from: 0 0 30;
+   to: 0 0 240;
+   loop: true;
+   dur: 150;
+   
+   "
+   
+   ></a-cylinder>      
+   
+   
+     <!-- engine 5 -->
+   <a-cylinder
+   radius=".28"
+   height="1.7"
+   position="0 0.2 -2.8"
+   color="#3b3b3b"
+   rotation="0 0 30"
+   
+   animation__1="
+   
+   property: rotation;
+   from: 0 0 120;
+   to: 0 0 150;
+   loop: true;
+   dur: 150;
+   
+   "
+   
+   ></a-cylinder>      
+      
+   <!-- engine cowl -->
+  <a-torus
+  
+  color="#4d4d4d" 
+  arc="270" 
+  radius="1" 
+  radius-tubular=".15"
+  rotation= "2 0 -45"
+  position= "0 .2 -1.9"
+  
+  animation= "
+  
+  property: scale;
+  from: 1 1 4;
+  to: 1 1 4;
+  dur: 10;
+  
+  "
+  
+  ></a-torus>
+  
+  <!-- elevator -->
+ <a-box
+ 
+ color="darkred"
+ position="0 1 6"
+ depth="1"
+ height=".1"
+ width="4"
+ 
+ ></a-box>
+ 
+ <!-- rudder -->
+ <a-box
+ 
+ color="darkred"
+ position="0 1.5 6"
+ depth="1"
+ height=".1"
+ width="2"
+ rotation="0 0 90"
+ 
+ ></a-box>
+ 
+ 
+ 
+ 
+ <a-sky
+ color="lightblue"
+ ></a-sky>
+ 
+ 
+ <!-- runnway -->
+ 
+ <a-box
+ 
+ width="50"
+ depth="500"
+ src="https://codehs.com/uploads/c76b93a6ded2b95e1666964c8197060c"
+ position="0 -3 -4"
+ 
+ animation="
+ 
+ property: position;
+ from: 0 -3 -4;
+ to: 0 -3 100;
+ dur: 2000;
+ easing: linear;
+ "
+ 
+ animation__2="
+ 
+ property: position;
+ from: 0 -3 100;
+ to: 0 -400 5000;
+ dur: 21000;
+ delay: 2000;
+ easing: linear;
+ 
+ "
+ 
+ animation__298674="
+ 
+ property: opacity;
+ from:1;
+ to:0;
+ dur: 16000;
+ 
+ "
+ 
+ ></a-box>
+ 
+ <!-- ground -->
+ <a-plane
+ src="https://codehs.com/uploads/145e605e8ad5afd8e336b3a0465e6015"
+ position= "0 -4 0"
+ width="40000"
+ height="40000"
+ rotation="-90"
+ 
+ animation="
+ 
+ property: position;
+ from: 0 -4 0;
+ to: 0 -4 100;
+ dur: 2000;
+ easing: linear;
+ "
+ 
+ animation__2="
+ 
+ property: position;
+ from: 0 -4 100;
+ to: 0 -500 5000;
+ dur: 22000;
+ delay: 2000;
+ easing: linear;
+ 
+ "
+ 
+ animation__876342548834759="
+ 
+ property: position;
+ from: 0 -500 -5000;
+ to: 0 -500 5000;
+ loop: true;
+ dur: 35000;
+ delay:22000;
+ easing: linear;
+ 
+ "
+ animation__2987674="
+ 
+ property: opacity;
+ from:1;
+ to:.5;
+ dur: 15000;
+ 
+ "
+ 
+ ></a-plane>
+ 
+ <!-- barage baloon -->
+ 
+ <a-sphere
+ 
+ radius="60"
+ 
+ animation="
+ 
+ property: position;
+ from: .0 200 -5000;
+ to: 0 0 -220;
+ dur: 10000;
+ delay: 20000;
+ 
+ "
+ animation__dead="
+ 
+ property: position;
+ from: 0 100 -2000;
+ to: 0 -50000 50000;
+ dur: 20000;
+delay: 27800; 
+ "
+
+ 
+ animation__11="
+ 
+ property: scale;
+ from: 9 5 5;
+ to: 9 5 5
+ 
+ "
+ animation__22="
+ 
+ property: color;
+        from: rgb(210, 223, 223);
+        to: rgb(50, 0, 0);
+        dur: 3000;
+        delay: 24000;
+ 
+ "
+ 
+ ></a-sphere>
+ 
+<a-sphere
+ 
+ radius="40"
+ 
+ 
+ animation="
+ 
+ property: position;
+ from:-200 200 -5000;
+ to:-200 0 -220;
+ dur: 10000;
+ delay: 20000;
+ 
+ "
+ animation__ded="
+ 
+ property: position;
+ from:-200 100 -2000;
+to:-200 -50000 50000;
+ dur: 20000;
+delay: 27800; 
+ "
+
+ 
+ animation__11="
+ 
+ property: scale;
+ from: 7 10 2 ;
+ to: 7 10 2;
+ 
+ "
+ animation__22="
+ 
+ property: color;
+        from: rgb(210, 223, 223);
+        to: rgb(50, 0, 0);
+        dur: 3000;
+        delay: 24000;
+ 
+ "
+ 
+ ></a-sphere>
+ 
+ 
+ <!-- explode! -->
+ 
+ 
+ <!-- boom -->
+ 
+ <a-sphere
+ 
+ radius="15"
+ position="0 0 -220"
+ color="grey"
+ 
+ animation__94=" 
+ 
+ property: visible;
+ from: true;
+ to: false;
+ dur:.001;
+ "
+ 
+ 
+ animation__3541=" 
+ 
+ property: scale;
+ from: 1 1 1;
+ to: 5 5 5.00;
+ dur: 1000;
+ delay: 25000;
+ 
+ "
+ animation__de5a3="
+ 
+ property: color;
+ from: rgb(0, 0, 0);
+ to:rgb(225, 10, 0);
+ dur: 800;
+delay: 25000; 
+ "
+ 
+ animation__dea5="
+ 
+ property: opacity;
+ from: 1;
+ to:.0;
+ dur: 900;
+delay: 25300; 
+ "
+ 
+ animation__302="
+
+property: position;
+from: 0 0 -220;
+to: 0 -500 0;
+delay: 26000;
+dur:.1;
+
+"
+ 
+ 
+ 
+animation__309="
+
+property: visible;
+from: false;
+to: true;
+delay: 24500;
+
+"
+ 
+ 
+ 
+ ></a-sphere>
+ 
+ 
+ <a-sphere
+ 
+ radius="15"
+ position="-20 40 -250"
+ color="grey"
+ 
+ animation__94=" 
+ 
+ property: visible;
+ from: true;
+ to: false;
+ dur:.001;
+ "
+ 
+ 
+ animation__3541=" 
+ 
+ property: scale;
+ from: 1 1 1;
+ to: 5 5 5.00;
+ dur: 300;
+ delay: 26000;
+ 
+ "
+ animation__dea3="
+ 
+ property: color;
+ from: rgb(0, 0, 0);
+ to:rgb(225, 10, 0);
+ dur: 270;
+delay: 26000; 
+ "
+ 
+ animation__dea5="
+ 
+ property: opacity;
+ from: 1;
+ to:.0;
+ dur: 300;
+delay: 26100; 
+ "
+ 
+ animation__302="
+
+property: position;
+from: 0 0 -220;
+to: 0 -500 0;
+delay: 27000;
+dur:.1;
+
+"
+ 
+ 
+ 
+animation__309="
+
+property: visible;
+from: false;
+to: true;
+delay: 25000;
+
+"
+ 
+ 
+ 
+ ></a-sphere>
+ 
+ 
+ <a-sphere
+ 
+ radius="15"
+ position="20 -30 -190"
+ color="grey"
+ 
+ animation__94=" 
+ 
+ property: visible;
+ from: true;
+ to: false;
+ dur:.001;
+ "
+ 
+ 
+ animation__3541=" 
+ 
+ property: scale;
+ from: 1 1 1;
+ to: 5 5 5.00;
+ dur: 300;
+ delay: 26600;
+ 
+ "
+ animation__dea3="
+ 
+ property: color;
+ from: rgb(0, 0, 0);
+ to:rgb(225, 10, 0);
+ dur: 270;
+delay: 26600; 
+ "
+ 
+ animation__dea5="
+ 
+ property: opacity;
+ from: 1;
+ to:.0;
+ dur: 300;
+delay: 26700; 
+ "
+ 
+ animation__302="
+
+property: position;
+from: 0 0 -220;
+to: 0 -500 0;
+delay: 27600;
+dur:.1;
+
+"
+ 
+ 
+ 
+animation__309="
+
+property: visible;
+from: false;
+to: true;
+delay: 25600;
+
+"
+ 
+ 
+ 
+ ></a-sphere>
+ 
+ 
+ <a-sphere
+ 
+ radius="25"
+ position="0 -30 -180"
+ color="grey"
+ 
+ animation__94=" 
+ 
+ property: visible;
+ from: true;
+ to: false;
+ dur:.001;
+ "
+ 
+ 
+ animation__3541=" 
+ 
+ property: scale;
+ from: 1 1 1;
+ to: 5 5 5.00;
+ dur: 300;
+ delay: 27300;
+ 
+ "
+ animation__dea3="
+ 
+ property: color;
+ from: rgb(0, 0, 0);
+ to:rgb(225, 10, 0);
+ dur: 270;
+delay: 27300; 
+ "
+ 
+ animation__dea5="
+ 
+ property: opacity;
+ from: 1;
+ to:.0;
+ dur: 300;
+delay: 27400; 
+ "
+ 
+ animation__302="
+
+property: position;
+from: 0 0 -220;
+to: 0 -500 0;
+delay: 28300;
+dur:.1;
+
+"
+ 
+ 
+ 
+animation__309="
+
+property: visible;
+from: false;
+to: true;
+delay: 26100;
+
+"
+ 
+ 
+ 
+ ></a-sphere>
+ 
+ <!-- machine guns! -->
+ <a-cylinder
+ 
+ color="grey"
+ radius=".1"
+ height="1.7"
+ position="-.2 1.4 -1.7"
+ rotation="-87"
+ 
+ ></a-cylinder>
+ 
+  <a-cylinder
+ 
+ color="grey"
+ radius=".1"
+ height="1.7"
+ position=".2 1.4 -1.7"
+ rotation="-87"
+ 
+ ></a-cylinder>
+ 
+ <!-- bullets -->
+ <a-sphere
+ 
+ color="black"
+ radius=".1"
+ 
+ 
+ animation="
+ 
+ property: position;
+ from: -.2 1.55 -2;
+ to: -.2 1.55 -220;
+ dur: 150;
+ delay: 21000;
+ loop: 40;
+ 
+ "
+ 
+ 
+ ></a-sphere>
+ 
+ <a-sphere
+ 
+ color="black"
+ radius=".1"
+ 
+ 
+ animation="
+ 
+ property: position;
+ from: .2 1.55 -2;
+ to: .2 1.55 -220;
+ dur: 150;
+ delay: 21150;
+ loop: 40;
+ 
+ "
+ 
+ 
+ ></a-sphere>
+ 
+ 
+  <!-- flashes -->
+ <a-sphere
+ 
+ color="orange"
+ radius=".1"
+ position=".18 1.4 -2.45"
+ 
+ 
+ animation="
+ 
+ property: scale;
+ from: 1 1 1;
+ to: 5.0 5 1;
+ dur: 75
+ dir: alternate;
+ delay: 21000;
+ loop: 80;
+ 
+ "
+animation__34=" 
+
+property: visible;
+from: true;
+to: false;
+delay: 27400;
+
+
+
+"
+
+animation__67="
+
+property: opacity;
+from: 1;
+to:.3;
+dur: 75
+ dir: alternate;
+ delay: 21000;
+ loop: 80;
+
+"
+ 
+ ></a-sphere>
+ <a-sphere
+ 
+ color="orange"
+ radius=".1"
+ position="-.18 1.4 -2.45"
+ 
+ 
+ animation="
+ 
+ property: scale;
+ from: 1 1 1;
+ to: 5.0 5 1;
+ dur: 75
+ dir: alternate;
+ delay: 21150;
+ loop: 80;
+ 
+ "
+animation__34=" 
+
+property: visible;
+from: true;
+to: false;
+delay: 27400;
+
+
+
+"
+
+animation__67="
+
+property: opacity;
+from: 1;
+to:.3;
+dur: 75
+ dir: alternate;
+ delay: 21150;
+ loop: 80;
+
+"
+ 
+ ></a-sphere>
+ 
+
+<a-sphere
+ 
+ 
+ radius="20"
+ 
+ animation="
+ 
+ 
+ property: position;
+ from: 0 100 -300;
+ to: 400 -100 300;
+ dur: 4000;
+ delay:7000;
+ 
+ loop: true;
+ "
+ 
+ animation__32135=" 
+ 
+ property: opacity;
+ from: 1;
+ to: .3;
+ "
+ 
+ 
+ 
+ 
+ 
+ ></a-sphere>
+ 
+ 
+ 
+ <a-sphere
+ 
+ 
+ radius="40"
+ 
+ animation="
+ 
+ 
+ property: position;
+ from:-20 100 -300;
+ to: 0 -100 300;
+ dur: 4500;
+ delay:8000;
+ 
+ loop: true;
+ "
+ 
+ animation__32135=" 
+ 
+ property: opacity;
+ from: 1;
+ to: .3;
+ "
+ 
+ 
+ 
+ 
+ 
+ ></a-sphere>
+   
+   
+    
+ <a-sphere
+ 
+ 
+ radius="60"
+ 
+ animation="
+ 
+ 
+ property: position;
+ from:-100 0 -300;
+ to: 0 -100 300;
+ dur: 4500;
+ delay:9000;
+ 
+ loop: true;
+ "
+ 
+ animation__32135=" 
+ 
+ property: opacity;
+ from: 1;
+ to: .3;
+ "
+ 
+ 
+ 
+ 
+ 
+ ></a-sphere>
+ 
+  
+ <a-sphere
+ 
+ 
+ radius="30"
+ 
+ animation="
+ 
+ 
+ property: position;
+ from:100 100 -300;
+ to:0 -150 300;
+ dur: 4500;
+ delay:10000;
+ 
+ loop: true;
+ "
+ 
+ animation__32135=" 
+ 
+ property: opacity;
+ from: 1;
+ to: .3;
+ "
+ 
+ 
+ 
+ 
+ 
+ ></a-sphere>
+ 
+ <a-sphere
+ 
+ 
+ radius="70"
+ 
+ animation="
+ 
+ 
+ property: position;
+ from:-100 100 -200;
+ to:0 -150 300;
+ dur: 4500;
+ delay:10000;
+ 
+ loop: true;
+ "
+ 
+ animation__32135=" 
+ 
+ property: opacity;
+ from: 1;
+ to: .3;
+ "
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a-sphere
+ 
+ <a-sphere
+ 
+ 
+ radius="80"
+ 
+ animation="
+ 
+ 
+ property: position;
+ from:100 100 -200;
+ to:150 0 300;
+ dur: 4500;
+ delay:9000;
+ 
+ loop: true;
+ "
+ 
+ animation__32135=" 
+ 
+ property: opacity;
+ from: 1;
+ to: .3;
+ "
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a-sphere
+ 
+ 
+ radius="30"
+ 
+ animation="
+ 
+ 
+ property: position;
+ from:0 0 -300;
+ to:0 -50 300;
+ dur: 4500;
+ delay:11000;
+ 
+ loop: true;
+ "
+ 
+ animation__32135=" 
+ 
+ property: opacity;
+ from: 1;
+ to: .3;
+ "
+ 
+ 
+ ccc
+ 
+ 
+ 
+ 
+ ></a-sphere>
+   
+   
+    
+ 
+ ></a-sphere>
+ 
+   
+        </a-scene>
+    </body>
+    
+</html>
