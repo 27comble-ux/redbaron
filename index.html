@@ -8,7 +8,7 @@
 
 <a-scene>
 
-  <!-- ENGINE AUDIO --> <a-assets> <audio id="engine" src="engine_idle.mp3" preload="auto"> </audio> </a-assets> <a-entity id="engineSound" sound="src: #engine; loop: true; volume: .5"> </a-entity> <script> const scene = document.querySelector('a-scene'); scene.addEventListener('click', function () { const engineSound = document.querySelector('#engineSound'); if (engineSound.components.sound) { engineSound.components.sound.playSound(); } }); </script>
+  <!-- ENGINE AUDIO --> <a-assets> <audio id="engine" src="engine_idle.mp3" preload="auto"> </audio> </a-assets> <a-entity id="engineSound" sound="src: #engine; loop: true; volume: .9"> </a-entity> <script> const scene = document.querySelector('a-scene'); scene.addEventListener('click', function () { const engineSound = document.querySelector('#engineSound'); if (engineSound.components.sound) { engineSound.components.sound.playSound(); } }); </script>
 
  <!-- music AUDIO --> <a-assets> <audio id="war" src="stereo_color-military-drums-485966.mp3" preload="auto"> </audio> </a-assets> <a-entity id="war" sound="src: #war; loop: true; volume: .5"> </a-entity> <script> const scene = document.querySelector('a-scene'); scene.addEventListener('click', function () { const war = document.querySelector('#war'); if (war.components.sound) { war.components.sound.playSound(); } }); </script>
 
