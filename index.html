@@ -10,6 +10,8 @@
 
   <!-- ENGINE AUDIO --> <a-assets> <audio id="engine" src="engine_idle.mp3" preload="auto"> </audio> </a-assets> <a-entity id="engineSound" sound="src: #engine; loop: true; volume: .5"> </a-entity> <script> const scene = document.querySelector('a-scene'); scene.addEventListener('click', function () { const engineSound = document.querySelector('#engineSound'); if (engineSound.components.sound) { engineSound.components.sound.playSound(); } }); </script>
 
+ <!-- music AUDIO --> <a-assets> <audio id="war" src="engine_idle.mp3" preload="auto"> </audio> </a-assets> <a-entity id="engineSound" sound="src: #engine; loop: true; volume: .5"> </a-entity> <script> const scene = document.querySelector('a-scene'); scene.addEventListener('click', function () { const engineSound = document.querySelector('#engineSound'); if (engineSound.components.sound) { engineSound.components.sound.playSound(); } }); </script>
+
 
     <a-camera>
         <a-cursor></a-cursor>
