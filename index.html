@@ -709,6 +709,6 @@
 
 
 </a-scene>
-
+<!-- ========================= --> <!-- START AUDIO AFTER USER INPUT --> <!-- ========================= --> <script> function startAudio() { const engineSound = document.querySelector("#engineSound"); const musicSound = document.querySelector("#musicSound"); if ( engineSound && engineSound.components && engineSound.components.sound ) { engineSound.components.sound.playSound(); } if ( musicSound && musicSound.components && musicSound.components.sound ) { musicSound.components.sound.playSound(); } } /* Browsers normally block audio from starting automatically. Clicking, tapping, or using a VR pointer starts both sounds. */ document.addEventListener( "pointerdown", startAudio, { once: true } ); document.addEventListener( "click", startAudio, { once: true } ); document.addEventListener( "touchstart", startAudio, { once: true } ); </script>
 </body>
 </html>
